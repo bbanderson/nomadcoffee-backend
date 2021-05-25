@@ -24,3 +24,6 @@ client는 Prisma 개발팀이 node_modules에 넣었습니다(node_modules/@pris
 2. 기본적으로 graphql은 optional, prisma에서는 required다.
 
 ### 7. npx prisma studio
+
+### 8. npm i graphql-tools
+typeDefs끼리 merge

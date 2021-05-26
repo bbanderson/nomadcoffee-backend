@@ -1,3 +1,7 @@
+# 사전 지식
+
+* * *
+
 ### 1. npm i graphql apollo-server
 
 ### 2. npm i @babel/{core,preset-env,node} // babel 자체, 개발환경에서 런타임 시 코드 업데이트, 콘솔에서의 js 실행기
@@ -27,3 +31,12 @@ client는 Prisma 개발팀이 node_modules에 넣었습니다(node_modules/@pris
 
 ### 8. npm i graphql-tools
 typeDefs끼리 merge
+
+* * *
+
+# 클론 코딩 시작
+
+기존 `prisma/` 폴더, `movies` 폴더, postgresql 안에 있는 `instaclone` DB를 지운 뒤,
+DB 새로 생성 후 `npx prisma init`
+
+schema.prisma를 변경할 때마다 migtrate 해야 한다.

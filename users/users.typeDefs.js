@@ -18,6 +18,11 @@ export default gql`
     seeProfile(username: String): User
   }
 
+    type LoginResult {
+    ok: Boolean!
+    token: String
+    error: String
+    }
   type Mutation {
     createAccount(
       username: String!
@@ -28,5 +33,6 @@ export default gql`
       githubUsername: String
       password: String!
     ): User
+    login(username: String!, password: String!): LoginResult!
   }
 `;
